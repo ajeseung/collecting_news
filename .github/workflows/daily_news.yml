@@ -2,7 +2,7 @@ name: Daily Newspaper Collection
 
 on:
   schedule:
-    - cron: "02 6 * * 1-5"
+    - cron: "01 6 * * 1-5"
       timezone: "Asia/Seoul"
 
   workflow_dispatch:

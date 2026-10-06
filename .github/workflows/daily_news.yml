@@ -1,16 +1,13 @@
 name: Daily Newspaper Collection
 
 on:
-  schedule:
-    - cron: "42 5 * * 1-5"
-      timezone: "Asia/Seoul"
-
   workflow_dispatch:
     inputs:
       target_date:
         description: "수집 날짜 YYYYMMDD. 비워두면 한국시간 오늘 날짜 사용"
         required: false
         default: ""
+        type: string
 
 jobs:
   collect-validate-enrich-send:
